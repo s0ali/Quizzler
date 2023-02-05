@@ -23,8 +23,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Qo4-ge-ely">
                                 <rect key="frame" x="15" y="59" width="363" height="759"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ng4-7s-msV">
+                                        <rect key="frame" x="0.0" y="0.0" width="363" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question Text" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="Cv4-l6-c8j" userLabel="Question Lable">
-                                        <rect key="frame" x="0.0" y="0.0" width="363" height="537"/>
+                                        <rect key="frame" x="0.0" y="29.666666666666686" width="363" height="537"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="537" id="DCW-mF-nOD"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="133" id="pkL-Vu-aIr"/>
@@ -34,7 +40,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3T6-8Y-KyY">
-                                        <rect key="frame" x="0.0" y="556" width="363" height="80"/>
+                                        <rect key="frame" x="0.0" y="575.66666666666663" width="363" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="ndJ-sB-L98"/>
                                         </constraints>
@@ -48,7 +54,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vsQ-yA-EDw">
-                                        <rect key="frame" x="0.0" y="655" width="363" height="80"/>
+                                        <rect key="frame" x="0.0" y="665" width="363" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="hTp-Gq-zNx"/>
                                         </constraints>
@@ -88,6 +94,7 @@
                         <outlet property="falseButton" destination="vsQ-yA-EDw" id="Za4-jQ-VpN"/>
                         <outlet property="progressBar" destination="kSH-ve-Xck" id="egc-VI-lwM"/>
                         <outlet property="questionLable" destination="Cv4-l6-c8j" id="3vt-6b-Pvf"/>
+                        <outlet property="scoreLable" destination="ng4-7s-msV" id="hNo-kw-IgK"/>
                         <outlet property="trueButton" destination="3T6-8Y-KyY" id="U7Z-N8-bvO"/>
                     </connections>
                 </viewController>
